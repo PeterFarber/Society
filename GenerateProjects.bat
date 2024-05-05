@@ -1,0 +1,2 @@
+wsl ./GenerateProjects.sh
+pause

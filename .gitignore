@@ -1,5 +1,16 @@
+# Binaries
+**/bin/
 _bin/
 _obj/
-*.sln
-*.vcxproj
-*.vcxproj.user
+Intermediates/
+
+# Hazel files
+*.log
+
+# Visual Studio files and folder
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+**.csproj
