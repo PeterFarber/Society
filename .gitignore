@@ -1,5 +1,4 @@
 # Binaries
-**/bin/
 _bin/
 _obj/
 Intermediates/
@@ -14,3 +13,13 @@ Intermediates/
 **.vcxproj.filters
 **.vcxproj.user
 **.csproj
+
+# Makefiles
+Makefile
+CMakeLists.txt
+
+# Mac files
+.DS_Store
+*.DS_Store
+
+
