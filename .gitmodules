@@ -1,3 +1,0 @@
-[submodule "Society/vendor/spdlog"]
-	path = Society/vendor/spdlog
-	url = https://github.com/gabime/spdlog.git
