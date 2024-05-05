@@ -12,6 +12,7 @@ project "Society"
 	location "Society"
 	kind "SharedLib"
 	language "C++"
+	buildoptions { "-std=c++11" } 
 
 	targetdir("_bin/" .. outputdir .. "/%{prj.name}")
 	objdir("_obj/" .. outputdir .. "/%{prj.name}")
@@ -39,9 +40,9 @@ project "Society"
 			"SC_BUILD_DLL"
 		}
 
-		postbuildcommands {
-			("{COPYDIR} %{cfg.buildtarget.relpath} ../_bin/" .. outputdir .. "/Sandbox")
-		}
+	filter {"system:macosx"}
+		disablewarnings {"deprecated-declarations"}
+
 
 	filter "configurations:Debug"
 		defines "SC_DEBUG"
@@ -55,10 +56,17 @@ project "Society"
 		defines "SC_DIST"
 		optimize "On"
 
+	
+	postbuildcommands {
+		("{COPYDIR} %{cfg.buildtarget.relpath} ../_bin/" .. outputdir .. "/Sandbox")
+	}
+
+
 project "Sandbox"
 	location "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
+	buildoptions { "-std=c++11" } 
 
 	targetdir("_bin/" .. outputdir .. "/%{prj.name}")
 	objdir("_obj/" .. outputdir .. "/%{prj.name}")
@@ -86,6 +94,10 @@ project "Sandbox"
 			"SC_PLATFORM_WINDOWS"
 		}
 
+	filter {"system:macosx"}
+		disablewarnings {"deprecated-declarations"}
+	
+	
 	filter "configurations:Debug"
 		defines "SC_DEBUG"
 		symbols "On"

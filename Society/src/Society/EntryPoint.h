@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef SC_PLATFORM_WINDOWS
+// #ifdef SC_PLATFORM_WINDOWS
 
 extern Society::Application* Society::CreateApplication();
 
@@ -15,4 +15,4 @@ int main(int argc, char** argv)
 	delete app;
 }
 
-#endif
+// #endif

@@ -12,7 +12,6 @@
 #include <unordered_map>
 #include <unordered_set>
 
-
-#ifdef SC_PLATFORM_WINDOWS
-	#include <Windows.h>
-#endif
+// #ifdef SC_PLATFORM_WINDOWS
+// 	#include <Windows.h>
+// #endif

@@ -3,10 +3,10 @@
 #include "Core.h"
 
 namespace Society {
-	class SC_API Application
+	class Application
 	{
 
-		public:
+	public:
 		Application();
 		virtual ~Application();
 
@@ -16,6 +16,6 @@ namespace Society {
 	};
 
 	// To be defined in CLIENT
-	Application	* CreateApplication();
+	Application* CreateApplication();
 };
 

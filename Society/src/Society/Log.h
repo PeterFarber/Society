@@ -4,7 +4,7 @@
 #include "spdlog/spdlog.h"
 
 namespace Society {
-	class SC_API Log
+	class Log
 	{
 	public:
 		static void Init();
