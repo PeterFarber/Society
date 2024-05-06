@@ -1,7 +1,7 @@
 include "dependencies.lua"
 
 workspace "Society"
-	architecture "x86_64"
+	architecture "x64"
 	startproject "Sandbox"
 
 	configurations
@@ -10,11 +10,12 @@ workspace "Society"
 		"Release",
 		"Dist"
 	}
-
+--[[
 	flags
 	{
 		"MultiProcessorCompile"
 	}
+]]--
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 

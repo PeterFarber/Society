@@ -1,14 +1,11 @@
-
-
 project "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
+	cppdialect "C++17"
 	staticruntime "off"
-	buildoptions { "-std=c++11" } 
 
 	targetdir("%{wks.location}/_bin/" .. outputdir .. "/%{prj.name}")
 	objdir("%{wks.location}/_obj/" .. outputdir .. "/%{prj.name}")
-
 
 	files {
 		"src/**.h",
@@ -24,10 +21,13 @@ project "Sandbox"
 		"Society"
 	}
 
-	filter {"system:macosx"}
+	filter "system:windows"
+		systemversion "latest"
+
+	filter "system:macosx"
+		buildoptions { "-std=c++11" } 
 		disablewarnings {"deprecated-declarations"}
-	
-	
+
 	filter "configurations:Debug"
 		defines "SC_DEBUG"
 		symbols "On"
