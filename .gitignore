@@ -1,6 +1,5 @@
 # Binaries
-_bin/
-_obj/
+out/
 Intermediates/
 
 # Hazel files
@@ -16,7 +15,7 @@ Intermediates/
 
 # Makefiles
 Makefile
-CMakeLists.txt
+# CMakeLists.txt
 
 # Mac files
 .DS_Store

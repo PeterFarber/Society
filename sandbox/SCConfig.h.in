@@ -1,0 +1,3 @@
+// the configured options and settings for Sandbox
+#define SC_VERSION_MAJOR @SC_VERSION_MAJOR@
+#define SC_VERSION_MINOR @SC_VERSION_MINOR@

@@ -1,0 +1,14 @@
+#!/bin/bash
+config=$1
+
+BUILD_DIR="./out/build"
+
+if [ $config == "-r" ]; then
+    cmake -S . -B $BUILD_DIR/release -DCMAKE_BUILD_TYPE=Release
+    cmake --build $BUILD_DIR/release --config Release 
+else
+    cmake -S . -B $BUILD_DIR/debug -DCMAKE_BUILD_TYPE=Debug
+    cmake --build $BUILD_DIR/debug --config Debug 
+fi
+
+chmod -R 777 $BUILD_DIR

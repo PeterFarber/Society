@@ -1,0 +1,6 @@
+include("${CMAKE_DIR}/fetch_glad.cmake")
+include("${CMAKE_DIR}/fetch_glfw.cmake")
+include("${CMAKE_DIR}/fetch_glm.cmake")
+include("${CMAKE_DIR}/fetch_stb_image.cmake")
+include("${CMAKE_DIR}/fetch_spdlog.cmake")
+# include("${CMAKE_DIR}/fetch_assimp.cmake")
