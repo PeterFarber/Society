@@ -10,5 +10,3 @@ else
     cmake --install $BUILD_DIR/debug --prefix $INSTALL_DIR/debug --config Debug
 fi
 
-
-chmod -R 777 $INSTALL_DIR

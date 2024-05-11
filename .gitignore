@@ -1,5 +1,7 @@
 # Binaries
+_old/
 out/
+build/
 Intermediates/
 
 # Hazel files

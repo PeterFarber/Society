@@ -10,5 +10,3 @@ else
     cmake -S . -B $BUILD_DIR/debug -DCMAKE_BUILD_TYPE=Debug
     cmake --build $BUILD_DIR/debug --config Debug 
 fi
-
-chmod -R 777 $BUILD_DIR
