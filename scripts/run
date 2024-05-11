@@ -2,7 +2,7 @@
 config=$1
 
 if [ $config == "-r" ]; then
-    ./out/build/release/SandboxApp
+    ./_out/build/release/SandboxApp
 else
-    ./out/build/debug/SandboxAppd
+    ./_out/build/debug/SandboxAppd
 fi  

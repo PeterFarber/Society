@@ -1,8 +1,8 @@
 #!/bin/bash
 $config=$1
 
-BUILD_DIR="./out/build"
-INSTALL_DIR="./out/install"
+BUILD_DIR="./_out/build"
+INSTALL_DIR="./_out/install"
 
 if [ $config == "-r" ]; then
     cmake --install $BUILD_DIR/release --prefix $INSTALL_DIR/release --config Release

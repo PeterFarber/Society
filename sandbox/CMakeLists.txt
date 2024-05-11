@@ -1,13 +1,13 @@
 # configure a header file to pass the version number only
 configure_file(SCConfig.h.in SCConfig.h)
 
-file(GLOB SANDBOX_SRC CONFIGURE_DEPENDS
+file(GLOB Sandbox_SRC CONFIGURE_DEPENDS
   "src/*.h"
   "src/*.cpp"
 )
 
 # add the executable
-add_executable(SandboxApp ${SANDBOX_SRC})
+add_executable(SandboxApp ${Sandbox_SRC})
 
 set_target_properties(SandboxApp PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX})
 
