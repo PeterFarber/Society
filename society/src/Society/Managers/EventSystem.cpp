@@ -1,7 +1,7 @@
-#include "scpch.h"
+#include <scpch.h>
 
 #include "EventSystem.h"
-#include "Events.h"
+#include "../Core/Events.h"
 
 namespace Society {
 

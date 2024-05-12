@@ -1,12 +1,13 @@
-# add the library that runs
-
 file(GLOB Society_SRC CONFIGURE_DEPENDS
   "src/*.h"
   "src/*.cpp"
   "src/Society/*.cpp"
-  "src/Society/Components/*.cpp"
-  "src/Society/Systems/*.cpp"
+  "src/Society/Core/*.cpp"
+  "src/Society/Managers/*.cpp"
+  "src/Society/Vendor/*.cpp"
 )
+
+# add the library that runs
 add_library(Society ${Society_SRC})
 
 target_precompile_headers(Society PUBLIC "$<$<COMPILE_LANGUAGE:CXX>:${CMAKE_SOURCE_DIR}/Society/src/pch/scpch.h>")
@@ -25,8 +26,6 @@ target_include_directories(Society
   $<INSTALL_INTERFACE:include>
 )
 
-
-
 # Add OpenGL
 find_package(OpenGL REQUIRED)
 
@@ -42,11 +41,10 @@ set_property(TARGET Society PROPERTY VERSION "1.0.0")
 set_property(TARGET Society PROPERTY SOVERSION "1")
 
 # install libs
-set(installable_libs Society sc_compiler_flags glm-header-only glm spdlog glfw glad )
-install(TARGETS ${installable_libs} 
-  EXPORT SocietyTargets 
+set(installable_libs Society sc_compiler_flags glm-header-only glm spdlog glfw glad)
+install(TARGETS ${installable_libs}
+  EXPORT SocietyTargets
   DESTINATION lib)
 
 # install include headers
 install(FILES src/Society.h DESTINATION include)
-

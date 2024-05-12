@@ -3,7 +3,7 @@
 #include "ResourceManager.h"
 
 #include <glad/glad.h>
-#include "stb_image.h"
+#include "../Vendor/stb_image.h"
 
 
 namespace Society {

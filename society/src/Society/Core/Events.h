@@ -3,7 +3,7 @@
 
 #include <vector>
 #include "Log.h"
-#include "EventSystem.h"
+#include "../Managers/EventSystem.h"
 
 namespace Society {
 

@@ -3,8 +3,8 @@
 
 #include <map>
 #include <string>
-#include "Texture.h"
-#include "Shader.h"
+#include "../Texture.h"
+#include "../Shader.h"
 
 namespace Society {
 	// A static singleton ResourceManager class that hosts several

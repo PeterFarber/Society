@@ -1,7 +1,7 @@
 #ifndef SC_INPUTSYSTEM_H
 #define SC_INPUTSYSTEM_H
 
-#include "Interfaces/ISingleton.h"
+#include "../Interfaces/ISingleton.h"
 #include <GLFW/glfw3.h>
 
 namespace Society {

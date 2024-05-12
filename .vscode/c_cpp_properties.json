@@ -2,17 +2,17 @@
     "configurations": [
         {
             "name": "Mac",
-            // "includePath": [
-            //     "${workspaceFolder}/sandbox/**",
-            //     "${workspaceFolder}/society/**",
-            //     "${workspaceFolder}/out/build/debug/_deps/glad-github-build/include",
-            //     "${workspaceFolder}/out/build/debug/_deps/spdlog-github-src/include",
-            //     "${workspaceFolder}/out/build/debug/_deps/glm-github-src/glm",
-            //     // "${workspaceFolder}/out/build/debug/_deps/stb_image-github-src",
-            //     // "${workspaceFolder}/out/build/debug/_deps/stb_image-github-src",
-            //     "${workspaceFolder}/out/build/debug/sandbox",
-            //     "${workspaceFolder}/out/build/debug/society"
-            // ],
+            "includePath": [
+                "${workspaceFolder}/sandbox/**",
+                "${workspaceFolder}/society/**",
+                "${workspaceFolder}/build/_deps/glad-github-build/include",
+                "${workspaceFolder}/build/_deps/spdlog-github-src/include",
+                "${workspaceFolder}/build/_deps/glm-github-src/glm",
+                // "${workspaceFolder}/out/build/debug/_deps/stb_image-github-src",
+                // "${workspaceFolder}/out/build/debug/_deps/stb_image-github-src",
+                "${workspaceFolder}/build/sandbox",
+                "${workspaceFolder}/build/society"
+            ],
             "compileCommands": "${workspaceFolder}/build/compile_commands.json",
             "defines": [],
             "macFrameworkPath": [

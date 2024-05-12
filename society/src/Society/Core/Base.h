@@ -11,6 +11,5 @@
 #define DECLSPEC
 #endif
 
-#define BIT(x) (1 << x)
 
 #endif // !SC_CORE_H

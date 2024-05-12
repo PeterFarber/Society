@@ -2,8 +2,8 @@
 #define SC_EVENTSYSTEM_H
 
 #include <vector>
-#include "Log.h"
-#include "Interfaces/ISingleton.h"
+#include "../Core/Log.h"
+#include "../Interfaces/ISingleton.h"
 
 namespace Society {
 

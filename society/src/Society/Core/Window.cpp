@@ -7,8 +7,8 @@
 #include "Log.h"
 
 
-#include "EventSystem.h"
-#include "InputSystem.h"
+#include "../Managers/EventSystem.h"
+#include "../Managers/InputSystem.h"
 
 namespace Society {
 
